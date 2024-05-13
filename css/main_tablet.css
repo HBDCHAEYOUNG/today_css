@@ -1,0 +1,135 @@
+/* common */
+.no_mobile {
+  display: block;
+}
+.no_tablet {
+  display: none;
+}
+.mr-auto {
+  margin-right: auto;
+}
+hr {
+  display: none;
+}
+.lookmore {
+  cursor: pointer;
+  /* !커서 넣었을때 뾰잉 */
+}
+
+/* 헤더 */
+header button[type="button"] {
+  display: none;
+}
+.header {
+  justify-content: left;
+}
+.logo {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: none;
+  height: auto;
+}
+.header-menu a {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.header-right a {
+  padding: 0 8px;
+  cursor: pointer;
+}
+.header-right a:nth-child(1) {
+  border-right: 1px solid #c2c2c267;
+}
+
+header button {
+  padding: 10px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(53, 197, 240);
+  color: #fff;
+}
+
+/* 오세일 초특가 */
+.box-event .no_mobile {
+  display: flex;
+  gap: 10px;
+}
+.box-event .inner {
+  margin: 0 auto;
+  max-width: fit-content;
+}
+.event {
+  margin: 0;
+}
+.imgmenu {
+  grid-template-columns: repeat(10, 1fr);
+}
+/* 이런 사진을 찾고 있나요? */
+.card {
+  width: 20%;
+}
+/* 40평이상 */
+.board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 20px 0 0 0;
+}
+/* 오늘의 딜 */
+/* !질문 왜 크기가 다르지ㅜㅡㅜㅡㅜㅡㅜㅜㅡㅜ ->그리드 써*/
+.articles {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.overlay {
+  display: block;
+}
+
+.overlay .content {
+  margin: 10px 0 0 0;
+}
+
+/* 시공인터뷰, 오늘의 기획전 */
+.container--interview,
+.container--special {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.container--special {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.box-interview,
+.box-special {
+  flex-direction: column;
+}
+
+/* !질문 사진 비율만큼 늘리지않고 그냥 잘려서 보이게 하고싶음 */
+.box-interview_img {
+  flex: 0 0 auto;
+  height: fit-content;
+  aspect-ratio: 160/107;
+}
+.box-special_img {
+  flex: 0 0 auto;
+  height: fit-content;
+  aspect-ratio: 256/171;
+}
+.box-interview_text,
+.box-special_text {
+  margin: 5px 0 0 0px;
+}
+.description-interview {
+  -webkit-line-clamp: 3;
+}
+.container--special .card {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.title-special {
+  font-size: 16px;
+}

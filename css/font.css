@@ -1,0 +1,82 @@
+/* 기본글꼴설정 */
+/* 
+a > p {
+  font-family: "Dokdo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(53, 197, 240); 
+} */
+
+/* 헤더 메뉴(모바일없음) */
+.header-menu {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+.font-sky {
+  color: rgb(53, 197, 240);
+}
+.header-right a,
+header button {
+  font-size: 12px;
+}
+
+/* h1 제목 */
+.title {
+  display: block;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: -2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* 제목 아래 설명  */
+.description {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subject {
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  word-break: keep-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 100%;
+}
+.subject-title {
+  color: rgb(53, 197, 240);
+  font-weight: 990;
+}
+.lookmore {
+  color: rgb(53, 197, 240);
+  font-size: 13px;
+  font-weight: 990;
+}
+
+.section--category .subject {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* 오늘의 딜 */
+.font-lightgray {
+  color: #828c94;
+}
+.font-gray {
+  color: #424242;
+}
+.font-darkgray {
+  color: rgb(47, 52, 56);
+}

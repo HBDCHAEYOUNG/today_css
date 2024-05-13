@@ -1,0 +1,3142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 집</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+
+    <!-- mobile 버전 -->
+    <link rel="stylesheet" href="../css/main_mobile.css" />
+
+    <!-- Tablet 버전  -->
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="../css/main_tablet.css"
+    />
+
+    <!-- PC 버전   -->
+    <link
+      rel="stylesheet"
+      media="(min-width: 1024px)"
+      href="../css/main_desktop.css"
+    />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- 헤더 -->
+      <header class="">
+        <div class="inner header padding">
+          <button type="button">
+            <svg
+              class="icon"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+            >
+              <path
+                fill="#000000"
+                fill-rule="evenodd"
+                d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+              />
+            </svg>
+          </button>
+
+          <a href="/" class="logo">
+            <!-- <img src="../img/logo.png" alt="오늘의집 로고" /> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="71"
+              height="28"
+              fill="none"
+              class="css-40f4ru"
+            >
+              <path
+                fill="#2F3438"
+                d="M19.711 7.307h10.226c.759 0 1.374-.606 1.374-1.355s-.615-1.356-1.374-1.356h-8.852v-3.24C21.085.607 20.47 0 19.71 0c-.759 0-1.374.607-1.374 1.356v4.596c0 .749.615 1.355 1.374 1.355Z"
+              ></path>
+              <path
+                fill="#2F3438"
+                fill-rule="evenodd"
+                d="M13.804 8.877c0 4.711-2.261 7.638-5.9 7.638-3.64 0-5.901-2.927-5.901-7.638V8.54c0-4.711 2.26-7.638 5.9-7.638 3.64 0 5.9 2.927 5.9 7.638zm-5.9-5.264c-1.178 0-3.153.64-3.153 4.927v.337c0 4.287 1.975 4.927 3.152 4.927 1.178 0 3.153-.64 3.153-4.927V8.54c0-4.287-1.975-4.927-3.153-4.927Z"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                fill="#2F3438"
+                d="M9.278 23.496h4.655c.76 0 1.374.607 1.374 1.356 0 .748-.615 1.355-1.374 1.355H1.873A1.365 1.365 0 0 1 .5 24.852c0-.75.615-1.356 1.374-1.356H6.53v-4.173c0-.748.615-1.355 1.374-1.355.758 0 1.374.607 1.374 1.355zm22.79-13.84H17.343c-.759 0-1.373.607-1.373 1.355 0 .75.614 1.356 1.373 1.356h14.725c.76 0 1.374-.607 1.374-1.356 0-.748-.615-1.355-1.374-1.355M21.009 24.362c.654.499 2.897 1.475 9.59-.24a1.376 1.376 0 0 1 1.675.97 1.354 1.354 0 0 1-.984 1.653c-2.745.704-5.095 1.055-7.035 1.056-2.15 0-3.797-.432-4.927-1.294-1.103-.843-1.686-2.063-1.686-3.532v-2.163c0-.748.614-1.356 1.373-1.356h9.703v-2.03h-9.703a1.365 1.365 0 0 1-1.373-1.355c0-.749.614-1.356 1.373-1.356h11.077c.759 0 1.373.607 1.373 1.356v4.741c0 .749-.614 1.356-1.373 1.356h-9.703v.807c0 .632.191 1.06.62 1.387M68.135 0a1.41 1.41 0 0 0-1.419 1.4v11.2c0 .773.636 1.4 1.42 1.4a1.41 1.41 0 0 0 1.418-1.4V1.4c0-.773-.635-1.4-1.419-1.4m-6.624 12.39a1.374 1.374 0 0 0 1.759.808 1.351 1.351 0 0 0 .823-1.737c-.045-.12-.944-2.5-3.191-4.195l3.49-3.83c.362-.398.454-.97.233-1.458a1.375 1.375 0 0 0-1.255-.804h-8.56c-.759 0-1.374.607-1.374 1.356 0 .748.615 1.355 1.374 1.355h5.477l-6.499 7.132a1.342 1.342 0 0 0 .103 1.914c.263.233.591.348.919.348.376 0 .75-.152 1.022-.45l3.224-3.538c1.706 1.19 2.437 3.054 2.454 3.1Z"
+              ></path>
+              <path
+                fill="#2F3438"
+                fill-rule="evenodd"
+                d="M67.072 17.362c0-.749.615-1.356 1.374-1.356.759 0 1.374.607 1.374 1.356v6.627c0 1.914-1.579 3.471-3.519 3.471h-6.634c-1.94 0-3.519-1.557-3.519-3.471v-6.627c0-.749.615-1.356 1.374-1.356.759 0 1.374.607 1.374 1.356v2.095h8.176zm-7.405 7.387h6.634c.425 0 .771-.34.771-.76v-1.821h-8.176v1.82c0 .42.346.761.771.761m-18.999-8.935c1.664 0 3.052-.87 3.91-2.452.678-1.252 1.037-2.982 1.037-5.004 0-2.022-.359-3.752-1.038-5.004C43.72 1.772 42.332.902 40.668.902c-1.664 0-3.052.87-3.91 2.452-.678 1.252-1.037 2.982-1.037 5.004 0 2.022.359 3.752 1.038 5.004.857 1.581 2.245 2.452 3.909 2.452m0-12.201c2.093 0 2.2 3.952 2.2 4.745 0 .792-.107 4.745-2.2 4.745-2.094 0-2.2-3.953-2.2-4.745 0-.793.106-4.745 2.2-4.745"
+                clip-rule="evenodd"
+              ></path>
+              <path
+                fill="#2F3438"
+                d="M47.746 1.81c0-.748.615-1.355 1.374-1.355.759 0 1.374.607 1.374 1.356V25.73c0 .749-.615 1.355-1.374 1.355a1.365 1.365 0 0 1-1.374-1.355v-4.514c-2.992.733-7.314.95-9.812.95h-2.091a1.365 1.365 0 0 1-1.374-1.355c0-.749.615-1.356 1.374-1.356h2.091c4.378 0 7.991-.493 9.812-1.052z"
+              ></path>
+            </svg>
+          </a>
+
+          <nav class="no_mobile mr-auto header-menu font-gray">
+            <a class="font-sky">커뮤니티</a>
+            <a>쇼핑</a>
+            <a>인테리어/생활</a>
+          </nav>
+
+          <nav class="right">
+            <form class="search no_mobile no_tablet" method="get">
+              <button type="submit">
+                <svg
+                  class="icon"
+                  width="30px"
+                  height="30px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                    stroke="#424242"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+              <input type="text" placeholder="통합검색" />
+            </form>
+            <a href="#" class="no_desktop">
+              <svg
+                class="icon"
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z"
+                  stroke="#424242"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              <svg
+                class="icon"
+                width="30px"
+                height="30px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 10L18.5145 17.4276C18.3312 18.3439 18.2396 18.8021 18.0004 19.1448C17.7894 19.447 17.499 19.685 17.1613 19.8326C16.7783 20 16.3111 20 15.3766 20H8.62337C7.6889 20 7.22166 20 6.83869 19.8326C6.50097 19.685 6.2106 19.447 5.99964 19.1448C5.76041 18.8021 5.66878 18.3439 5.48551 17.4276L4 10M20 10H18M20 10H21M4 10H3M4 10H6M6 10H18M6 10L9 4M18 10L15 4M9 13V16M12 13V16M15 13V16"
+                  stroke="#424242"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </nav>
+
+          <nav class="no_mobile header-right">
+            <a>로그인</a>
+            <a>회원가입</a>
+            <button>글쓰기▽</button>
+          </nav>
+        </div>
+      </header>
+
+      <!-- 서브메뉴 -->
+      <section class="section--scrollmenu">
+        <div class="container">
+          <div class="inner box">
+            <div class="scrollmenu">
+              <a href="#" class="font-sky">홈</a>
+              <a href="#">추천</a>
+              <a href="#">#채널</a>
+              <a href="#">집들이</a>
+              <a href="#">3D인테리어</a>
+              <a href="#">살림수납</a>
+              <a href="#">콜렉터블</a>
+              <a href="#">홈스토랑</a>
+              <a href="#">핫플레이스</a>
+              <a href="#">육아</a>
+              <a href="#">플랜테리어</a>
+              <a href="#">반려동물</a>
+              <a href="#">캠핑</a>
+              <a href="#">취미</a>
+              <a href="#">이벤트</a>
+            </div>
+            <a href="#" class="box--ranking">
+              <p>1</p>
+              <svg
+                fill="#f77"
+                width="8px"
+                height="8px"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M21,21H3L12,3Z" />
+              </svg>
+              <p>스너글섬유유연제</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 직장인이라면 주목할만한 이벤트//오세일 초특가-->
+      <section class="inner padding section--imgmenu">
+        <div class="box-event">
+          <a href="#" class="no_tablet event">
+            <img
+              src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171170093444436331.png?w=720"
+              alt="event"
+            />
+          </a>
+          <!-- !질문 사진이 꽉차게 안돼! -->
+          <div class="no_mobile inner">
+            <a href="#" class="event">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/project/171289371612215334.jpg?w=850&h=510&c=c"
+                alt="event"
+              />
+            </a>
+            <a href="#" class="event">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/banners/home_banner/171412510294854592.png?w=256"
+                alt="event"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- 아이콘 메뉴 -->
+        <div class="imgmenu">
+          <a href="#" class="iconmenu">
+            <img
+              class="iconmenu-icon"
+              src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171152907767577875.png/512/none"
+              alt="1+1"
+            />
+            <p>오세일특가</p>
+          </a>
+          <a href="#" class="iconmenu">
+            <img
+              class="iconmenu-icon"
+              src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-169254392912279857.png/512/none"
+              alt="BEST"
+            />
+            <p>BEST</p>
+          </a>
+          <a href="#" class="iconmenu">
+            <img
+              class="iconmenu-icon"
+              src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171145477204682016.png/512/none"
+              alt="오늘의특가"
+            />
+            <p>오늘의딜</p>
+          </a>
+          <a href="#" class="iconmenu">
+            <img
+              class="iconmenu-icon"
+              src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-170859499611232840.png/512/none"
+              alt="오픈런딜"
+            />
+            <p>오픈런딜</p>
+          </a>
+          <a href="#" class="iconmenu">
+            <img
+              class="iconmenu-icon"
+              src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171012070842806654.png/512/none"
+              alt="출첵"
+            />
+            <p>행운의출첵</p>
+          </a>
+          <a href="#" class="iconmenu">
+            <img
+              class="iconmenu-icon"
+              src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171151986569872817.png/512/none"
+              alt="프리미엄"
+            />
+            <p>프리미엄</p>
+          </a>
+          <a href="#" class="iconmenu">
+            <img
+              class="iconmenu-icon"
+              src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171145478507982587.png/512/none"
+              alt="초특가견적"
+            />
+            <p>초특가견적</p>
+          </a>
+          <a href="#" class="iconmenu">
+            <img
+              class="iconmenu-icon"
+              src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-171152912903439969.png/512/none"
+              alt="에코백스"
+            />
+
+            <p>에코백스</p>
+          </a>
+          <a href="#" class="iconmenu">
+            <img
+              class="iconmenu-icon"
+              src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-169353225639708707.png/512/none"
+              alt="오!쇼룸"
+            />
+            <p>오!쇼룸</p>
+          </a>
+          <a href="#" class="iconmenu">
+            <img
+              class="iconmenu-icon"
+              src="https://image.ohou.se/image/resize/bucketplace-v2-development/uploads-shortcut-store_home_shortcut_sets-170078700204485935.png/512/none"
+              alt="특가혜택"
+            />
+            <p>특가/혜택</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- 색션사이 선 -->
+      <hr />
+
+      <!-- 이런 사진 찾고 있나요? -->
+      <section class="inner padding section--home1">
+        <div class="title-group">
+          <span class="description">
+            <a class="title">이런 사진 찾고 있나요?</a>
+            좋아하실 만한 인테리어 콘텐츠를 추천해 드려요
+          </span>
+          <a class="arrow-right">
+            <svg
+              class="no_tablet"
+              height="25px"
+              width="20px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 26.231 26.231"
+              xml:space="preserve"
+            >
+              <g>
+                <g id="c108_arrow">
+                  <path
+                    style="fill: #030104"
+                    d="M4.669,0.382v5.879l8.312,6.555c0.183,0.146,0.183,0.453,0,0.6l-8.312,6.556v5.879
+               c0,0.145,0.08,0.278,0.212,0.344c0.132,0.062,0.29,0.044,0.403-0.046l16.141-12.733c0.183-0.146,0.183-0.453,0-0.6L5.284,0.082
+               C5.171-0.007,5.013-0.026,4.881,0.039C4.749,0.101,4.669,0.235,4.669,0.382z"
+                  />
+                </g>
+              </g>
+            </svg>
+            <a class="lookmore no_mobile">더보기</a>
+          </a>
+        </div>
+
+        <div class="scroll-cards">
+          <ul class="cards">
+            <li class="card">
+              <!-- 상품 이미지 -->
+              <a href="#" class="product">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/171180342797881595.jpeg?w=256&h=342&c=c"
+                  alt="집1"
+                />
+              </a>
+
+              <!-- 프로필 -->
+              <div class="profile">
+                <picture class="profile-img">
+                  <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/profileImageUrl/171145331591235539.jpg"
+                    alt="프로필사진"
+                  />
+                </picture>
+                <p>우혁1</p>
+              </div>
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="card">
+              <!-- 상품 이미지 -->
+              <a href="#" class="product">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/168784484024451717.jpeg?w=256&h=342&c=c"
+                  alt="집2"
+                />
+              </a>
+
+              <!-- 프로필 -->
+              <div class="profile">
+                <picture class="profile-img">
+                  <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/uploads/users/profile_images/161207021292635966.jpeg?w=72"
+                    alt="프로필사진2"
+                  />
+                </picture>
+                <p>우혁2</p>
+              </div>
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="card">
+              <!-- 상품 이미지 -->
+              <a href="#" class="product">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/171204023159073209.jpeg?w=256&h=342&c=c"
+                  alt="집3"
+                />
+              </a>
+
+              <!-- 프로필 -->
+              <div class="profile">
+                <picture class="profile-img">
+                  <img
+                    src="https://prs.ohou.se/apne2/home/profileImageUrl/v1-236678855847936.jpg?w=72"
+                    alt="프로필사진3"
+                  />
+                </picture>
+                <p>우혁3</p>
+              </div>
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="card">
+              <!-- 상품 이미지 -->
+              <a href="#" class="product">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/169794502654320433.jpeg?w=360&h=480&c=c"
+                  alt="집3"
+                />
+              </a>
+
+              <!-- 프로필 -->
+              <div class="profile">
+                <picture class="profile-img">
+                  <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/uploads/users/profile_images/1552995626_kakao_1046603523.jpg?w=72"
+                    alt="프로필사진4"
+                  />
+                </picture>
+                <p>우혁4</p>
+              </div>
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="card">
+              <!-- 상품 이미지 -->
+              <a href="#" class="product">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/171423052998656484.jpeg?w=360&h=480&c=c"
+                  alt="집5"
+                />
+              </a>
+
+              <!-- 프로필 -->
+              <div class="profile">
+                <picture class="profile-img">
+                  <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/profileImageUrl/171106552843803759.jpeg?w=72"
+                    alt="프로필사진5"
+                  />
+                </picture>
+                <p>우혁5</p>
+              </div>
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="card">
+              <!-- 상품 이미지 -->
+              <a href="#" class="product">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/169138417183382879.jpeg?w=360&h=480&c=c"
+                  alt="집6"
+                />
+              </a>
+
+              <!-- 프로필 -->
+              <div class="profile">
+                <picture class="profile-img">
+                  <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/profileImageUrl/171145331591235539.jpg"
+                    alt="프로필사진"
+                  />
+                </picture>
+                <p>우혁6</p>
+              </div>
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="card">
+              <!-- 상품 이미지 -->
+              <a href="#" class="product">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/171383355677177523.jpeg?w=360&h=480&c=c"
+                  alt="집7"
+                />
+              </a>
+
+              <!-- 프로필 -->
+              <div class="profile">
+                <picture class="profile-img">
+                  <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/profileImageUrl/171255900930367940.jpeg?w=72"
+                    alt="프로필사진7"
+                  />
+                </picture>
+                <p>우혁7</p>
+              </div>
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="card">
+              <!-- 상품 이미지 -->
+              <a href="#" class="product">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/171443763632378694.jpeg?w=360&h=480&c=c"
+                  alt="집8"
+                />
+              </a>
+
+              <!-- 프로필 -->
+              <div class="profile">
+                <picture class="profile-img">
+                  <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/uploads/users/profile_images/165848707420482301.jpeg?w=72"
+                    alt="프로필사진8"
+                  />
+                </picture>
+                <p>우혁8</p>
+              </div>
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="card">
+              <!-- 상품 이미지 -->
+              <a href="#" class="product">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/170541482195435470.jpeg?w=360&h=480&c=c"
+                  alt="집9"
+                />
+              </a>
+
+              <!-- 프로필 -->
+              <div class="profile">
+                <picture class="profile-img">
+                  <img
+                    src="https://image.ohou.se/i/bucketplace-v2-development/profileImageUrl/171145331591235539.jpg"
+                    alt="프로필사진"
+                  />
+                </picture>
+                <p>우혁9</p>
+              </div>
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <li class="card">
+              <!-- 상품 이미지 -->
+              <a href="#" class="product">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/171083957030830412.JPG?w=360&h=480&c=c"
+                  alt="집10"
+                />
+              </a>
+
+              <!-- 프로필 -->
+              <div class="profile">
+                <picture class="profile-img">
+                  <img
+                    src="https://prs.ohou.se/apne2/home/profileImageUrl/v1-233839018893312.jpg?w=72"
+                    alt="프로필사진10"
+                  />
+                </picture>
+                <p>우혁10</p>
+              </div>
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </li>
+            <!-- 더보기 -->
+            <li class="card">
+              <a href="#">
+                <span class="arrow font-lightgray"> → </span>
+                <p class="font-lightgray">더보기</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 색션사이 선 -->
+      <hr />
+
+      <!-- 40평이상 이렇게 꾸미세요 -->
+      <section class="inner padding section--home2">
+        <div class="title-group">
+          <a class="title">'40평'이상 이라면 이렇게 꾸며보세요🌿</a>
+          <a href="#" class="arrow-right">
+            <svg
+              class="no_tablet"
+              height="20px"
+              width="20px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 26.231 26.231"
+              xml:space="preserve"
+            >
+              <g>
+                <g id="c108_arrow">
+                  <path
+                    style="fill: #030104"
+                    d="M4.669,0.382v5.879l8.312,6.555c0.183,0.146,0.183,0.453,0,0.6l-8.312,6.556v5.879
+			c0,0.145,0.08,0.278,0.212,0.344c0.132,0.062,0.29,0.044,0.403-0.046l16.141-12.733c0.183-0.146,0.183-0.453,0-0.6L5.284,0.082
+			C5.171-0.007,5.013-0.026,4.881,0.039C4.749,0.101,4.669,0.235,4.669,0.382z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="lookmore no_mobile">더보기</a>
+        </div>
+        <!-- 인테리어 피드 -->
+        <div class="board">
+          <a class="picture-box" href="#"
+            ><div class="picture">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/project/170012469870800889.jpg?w=360&h=360&c=c"
+                alt="40평1"
+              />
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="subject">
+              <span class="subject-title">맥시멀 다섯 식구! </span>수납으로
+              미니멀하게 만든 집
+            </p>
+          </a>
+          <a class="picture-box" href="#">
+            <div class="picture">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/projects/165581862937491981.jpg?w=360&h=360&c=c"
+                alt="40평2"
+              />
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="subject">
+              <span class="subject-title">동양미 물씬! </span>다도실과 중정을
+              품은 전원 주택 라이프
+            </p>
+          </a>
+          <a class="picture-box" href="#">
+            <div class="picture">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/project/170019504612233855.jpg?w=360&h=360&c=c"
+                alt="40평3"
+              />
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="subject">
+              <span class="subject-title">미니멀한 공간감을 </span>완성해주는
+              내력벽 수납👀
+            </p>
+          </a>
+          <a class="picture-box" href="#"
+            ><div class="picture">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/projects/163183151044011149.jpg?w=360&h=360&c=c"
+                alt="40평4"
+              />
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="subject">
+              <span class="subject-title">휴양지의 정갈한 호텔 느낌 </span
+              >수설렘과 쉼을 주는 집🌴
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 봄이 왔어요 -->
+      <section class="inner padding section--home3">
+        <div class="title-group">
+          <a class="title">봄이 왔어요🌸 베란다 개방 시작!</a>
+          <a class="arrow-right">
+            <svg
+              class="no_tablet"
+              height="20px"
+              width="20px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 26.231 26.231"
+              xml:space="preserve"
+            >
+              <g>
+                <g id="c108_arrow">
+                  <path
+                    style="fill: #030104"
+                    d="M4.669,0.382v5.879l8.312,6.555c0.183,0.146,0.183,0.453,0,0.6l-8.312,6.556v5.879
+			c0,0.145,0.08,0.278,0.212,0.344c0.132,0.062,0.29,0.044,0.403-0.046l16.141-12.733c0.183-0.146,0.183-0.453,0-0.6L5.284,0.082
+			C5.171-0.007,5.013-0.026,4.881,0.039C4.749,0.101,4.669,0.235,4.669,0.382z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a class="lookmore no_mobile">더보기</a>
+        </div>
+        <div class="board">
+          <a class="picture-box" href="#"
+            ><div class="picture">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/snapshots/163678075996054519.jpeg?w=540&h=540&c=c"
+                alt="봄1"
+              />
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="subject">
+              <span class="subject-title">1평 베란다의 변신 </span>똑똑하게 공간
+              쓰는 꿀템6 ✅
+            </p>
+          </a>
+          <a class="picture-box" href="#">
+            <div class="picture">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/advices/166428566753741666.jpg?w=540&h=540&c=c"
+                alt="봄2"
+              />
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="subject">
+              <span class="subject-title">로망자극 미니 베란다정원 </span
+              >꾸미기부터 식물 추천까지🌱
+            </p>
+          </a>
+          <a class="picture-box" href="#">
+            <div class="picture">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/advices/169933547433477227.webp?w=540&h=540&c=c"
+                alt="봄3"
+              />
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="subject">
+              <span class="subject-title">좁은 베란다의 변신! </span>
+              이케아템으로 셀프 팬트리 만들기
+            </p>
+          </a>
+          <a class="picture-box" href="#"
+            ><div class="picture">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/projects/cover_images/166134362969448398.jpg?w=540&h=540&c=c"
+                alt="봄4"
+              />
+              <div class="bookmark">
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+                <svg
+                  fill="#000000"
+                  width="25px"
+                  height="25px"
+                  viewBox="0 0 24 24"
+                  id="bookmark"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon flat-line"
+                >
+                  <path
+                    id="secondary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="fill: rgb(111, 225, 245); stroke-width: 2"
+                  ></path>
+                  <path
+                    id="primary"
+                    d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                    style="
+                      fill: none;
+                      stroke: rgb(255, 255, 255);
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <p class="subject">
+              <span class="subject-title">물에만 넣어두면 쑥쑥 자라요! </span
+              >간단하게 베란다에서 파 기르기🥬
+            </p>
+          </a>
+        </div>
+      </section>
+      <hr />
+
+      <!-- 카테고리별 상품찾기 -->
+      <section class="inner padding section--category">
+        <!-- 타이틀 -->
+        <div class="title-group">
+          <h1 class="title">카테고리별 상품 찾기</h1>
+        </div>
+        <!-- 카테고리 -->
+        <div class="scroll-categories">
+          <div class="categories">
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165698403420736265.png?w=108"
+                alt="가구"
+              />
+              <p>가구</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/171049146521642460.png?w=72"
+                alt="패브릭"
+              />
+              <p>패브릭</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165443714334272236.png?w=72"
+                alt="주방용품"
+              />
+              <p>주방용품</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/169258215285574092.png?w=72"
+                alt="가전/디지털"
+              />
+              <p>가전/디지털</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/166727583625644946.png?w=72"
+                alt="식품"
+              />
+              <p>식품</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/167167019685810067.png?w=72"
+                alt="데코/식물"
+              />
+              <p>데코/식물</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/171127972638175198.png?w=72"
+                alt="조명"
+              />
+              <p>조명</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165443714917341657.png?w=72"
+                alt="수납/정리"
+              />
+              <p>수납/정리</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165519431107541334.png?w=72"
+                alt="생활용품"
+              />
+              <p>생활용품</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/165579048228622395.png?w=72"
+                alt="생필품"
+              />
+              <p>생필품</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/166598560990637620.png?w=72"
+                alt="유아/아동"
+              />
+              <p>유아/아동</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/166597743167902408.png?w=72"
+                alt="렌탈/구독"
+              />
+              <p>렌탈/구독</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/168188662903796143.png?w=72"
+                alt="장보기"
+              />
+              <p>인테리어시공</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/170080296292287726.png?w=72"
+                alt="혼수/신혼"
+              />
+              <p>혼수/신혼</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/170529503435877992.png?w=72"
+                alt="반려동물"
+              />
+              <p>반려동물</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/171194745341441910.png?w=72"
+                alt="캠핑/레저"
+              />
+              <p>캠핑/레저</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/162823230480918647.png?w=72"
+                alt="공구/DIT"
+              />
+              <p>공구/DIY</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/166597743167902408.png?w=72"
+                alt="렌탈구독"
+              />
+              <p>렌탈구독</p>
+            </a>
+            <a class="category" href="#">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/category/store_home_categories/168188662903796143.png?w=72"
+                alt="장보기"
+              />
+              <p>장보기</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 오늘의 딜 -->
+      <section class="inner padding section--today_dealitem">
+        <div class="title-group">
+          <a class="title">오늘의 딜</a>
+          <a class="arrow-right">
+            <svg
+              class="no_tablet"
+              height="20px"
+              width="20px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 26.231 26.231"
+              xml:space="preserve"
+            >
+              <g>
+                <g id="c108_arrow">
+                  <path
+                    style="fill: #030104"
+                    d="M4.669,0.382v5.879l8.312,6.555c0.183,0.146,0.183,0.453,0,0.6l-8.312,6.556v5.879
+        c0,0.145,0.08,0.278,0.212,0.344c0.132,0.062,0.29,0.044,0.403-0.046l16.141-12.733c0.183-0.146,0.183-0.453,0-0.6L5.284,0.082
+        C5.171-0.007,5.013-0.026,4.881,0.039C4.749,0.101,4.669,0.235,4.669,0.382z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a class="lookmore no_mobile">더보기</a>
+        </div>
+        <div class="articles">
+          <article class="today_dealitem">
+            <a href="#" class="overlay">
+              <div class="image">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/168248516712850951.jpg?gif=1&amp;w=360&amp;h=360&amp;c=c&amp;q=0.8"
+                  alt="구이바다"
+                />
+                <div class="bookmark">
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgb(111, 225, 245); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                </div>
+                <div class="timer">06:08:22 남음</div>
+              </div>
+              <div class="content">
+                <p class="font-lightgray today-dealitem_brand">지라프</p>
+                <span class="font-gray today-dealitem_name">
+                  4/8 단하루! 역대급할인_최종가 89,000원_구이바다 세라믹
+                  아이보리에디션 M
+                </span>
+
+                <p class="font-lightgray today-dealitem_star">
+                  <svg
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24 24"
+                    fill="rgb(53, 197, 240)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="rgb(53, 197, 240)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <strong class="avg">4.8</strong>
+                  리뷰 758
+                </p>
+                <span class="today-dealitem_rate">
+                  <span class="rate">48%</span>22,500
+                </span>
+                <div class="today-dealitem_badge">
+                  <div class="delivery">무료배송</div>
+                  <div class="special-price">특가</div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <hr class="today_dealitem-bar" />
+          <article class="today_dealitem">
+            <a href="#" class="overlay">
+              <div class="image">
+                <img
+                  src="https://prs.ohou.se/apne2/any/uploads/productions/v1-205856878948480.jpg?gif=1&amp;w=640&amp;h=640&amp;c=c&amp;q=0.8"
+                  alt="비스포크제트"
+                />
+                <div class="bookmark">
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgb(111, 225, 245); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                </div>
+                <div class="timer">06:08:22 남음</div>
+              </div>
+              <div class="content">
+                <p class="font-lightgray today-dealitem_brand">삼성전자</p>
+                <span class="font-gray today-dealitem_name">
+                  단하루 40만원대 인증점 삼성 비스포크제트 220W VS20B956AUE
+                  산토리니 베이직
+                </span>
+
+                <p class="font-lightgray today-dealitem_star">
+                  <svg
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24 24"
+                    fill="rgb(53, 197, 240)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="rgb(53, 197, 240)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <strong class="avg">4.7</strong>
+                  리뷰 12,520
+                </p>
+                <span class="today-dealitem_rate">
+                  <span class="rate">35%</span>630,500
+                </span>
+                <div class="today-dealitem_badge">
+                  <div class="delivery">무료배송</div>
+                  <div class="special-price">특가</div>
+                </div>
+                <div class="today-dealitem_card">
+                  <div class="button">
+                    <img
+                      src="https://image.ohou.se/i/bucketplace-v2-development/static/productions/card-promotion-badge.png?w=54&amp;w=40&amp;h=32"
+                      alt="카드이미지"
+                    />
+                    <span>최대 10% 결제할인</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <hr class="today_dealitem-bar" />
+          <article class="today_dealitem">
+            <a href="#" class="overlay">
+              <div class="image">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/deals/171134171087247854.jpg?gif=1&amp;w=640&amp;h=640&amp;c=c&amp;q=0.8"
+                  alt="토마토소스"
+                />
+                <div class="bookmark">
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgb(111, 225, 245); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                </div>
+                <div class="timer">12:10:05 남음</div>
+              </div>
+              <div class="content">
+                <p class="font-lightgray today-dealitem_brand">청정원</p>
+                <span class="today-dealitem_name">
+                  [쿠폰+카드] 파스타소스 600g*3병+(증정)소스 170g*2개+면
+                  250g*2개
+                </span>
+
+                <p class="today-dealitem_star">
+                  <svg
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24 24"
+                    fill="rgb(53, 197, 240)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="rgb(53, 197, 240)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <strong class="avg">4.8</strong>
+                  리뷰 11,232
+                </p>
+                <span class="today-dealitem_rate">
+                  <span class="rate">32%</span>15,400
+                </span>
+                <div class="today-dealitem_badge">
+                  <div class="delivery">무료배송</div>
+                  <div class="special-price">특가</div>
+                </div>
+                <div class="today-dealitem_card">
+                  <div class="button">
+                    <img
+                      src="https://image.ohou.se/i/bucketplace-v2-development/static/productions/card-promotion-badge.png?w=54&amp;w=40&amp;h=32"
+                      alt="카드이미지"
+                    />
+                    <span>최대 8% 결제할인</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <hr class="today_dealitem-bar" />
+          <article class="today_dealitem">
+            <a href="#" class="overlay">
+              <div class="image">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/deals/171327728664474053.jpg?gif=1&amp;w=640&amp;h=640&amp;c=c&amp;q=0.8"
+                  alt="다우니"
+                />
+                <div class="bookmark">
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgb(111, 225, 245); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                </div>
+                <div class="timer">08:58:20 남음</div>
+              </div>
+              <div class="content">
+                <p class="font-lightgray today-dealitem_brand">다우니</p>
+                <span class="font-gray today-dealitem_name">
+                  [단하루 쿠폰+유연제 200ml 3개 증정] 초고농축 섬유유연제 1L×6개
+                  특가 모음전
+                </span>
+
+                <p class="font-lightgray today-dealitem_star">
+                  <svg
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24 24"
+                    fill="rgb(53, 197, 240)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="rgb(53, 197, 240)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <strong class="avg">4.8</strong>
+                  리뷰 758
+                </p>
+                <span class="today-dealitem_rate">
+                  <span class="rate">30%</span>14,500
+                </span>
+                <div class="today-dealitem_badge">
+                  <div class="delivery">무료배송</div>
+                  <div class="special-price">특가</div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- 유저들의 인테리어 시공 인터뷰 -->
+      <section class="inner padding section--interview">
+        <div class="title-group">
+          <a class="title">유저들의 인테리어 시공 인터뷰</a>
+          <a class="arrow-right">
+            <svg
+              class="no_tablet"
+              height="20px"
+              width="20px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 26.231 26.231"
+              xml:space="preserve"
+            >
+              <g>
+                <g id="c108_arrow">
+                  <path
+                    style="fill: #030104"
+                    d="M4.669,0.382v5.879l8.312,6.555c0.183,0.146,0.183,0.453,0,0.6l-8.312,6.556v5.879
+      c0,0.145,0.08,0.278,0.212,0.344c0.132,0.062,0.29,0.044,0.403-0.046l16.141-12.733c0.183-0.146,0.183-0.453,0-0.6L5.284,0.082
+      C5.171-0.007,5.013-0.026,4.881,0.039C4.749,0.101,4.669,0.235,4.669,0.382z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a class="lookmore no_mobile">더보기</a>
+        </div>
+
+        <div class="container--interview">
+          <a class="box-interview" href="#">
+            <div class="box-interview_img">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170588082462464511.jpg?w=256&h=256&c=c"
+                alt="예나디자인"
+              />
+            </div>
+            <div class="box-interview_text">
+              <p class="font-darkgray title-interview">예나디자인</p>
+              <p class="font-darkgray description-interview">
+                결혼하고 첫집에서 다음집으로 이사를 계획하면서 매매를 하게되었고
+                평소 SNS에서만 보던 내가 구상한 나의집을 상상하면서
+                구축매매+올인테리어를 하기로 결정하고 안산과 안양까지
+                오늘의집에서 유명한 인테리어 업체들로 총 10곳정도를 견적상담
+                받으러 다녔습니다. 인테리어 금액자체가 올랐다는건 알고있었지만
+                원하던 시공과 가능했던 예산 사이에서 쏙 맘에드는 곳이 없어 많은
+                부분을 포기하자는 마음으로 제일 마지막에 상담을 받았던
+                예나디자인! 원래 운명은 왜 항상 돌고돌아 마지막에 만나는건지
+                ㅠㅠ 무조건 시공에 들어갔으면 하는 조건은 1. 구축이라 거실과
+                방1개는 무조건 확장 2.공용(거실)화장실은 조적반+유리반 으로
+                공간분리 3.부엌 싱크대는 ㄷ 자형으로 아일랜드 식탁 4.무엇보다
+                궁금한걸 못참는 성격이라 빠르고 확실한 피드백을 잘해주는 곳
+                이였습니다. 하지만 저희가 가능했던 예산으로 확장은 포기를
+                했어야했는데 .. 예나와 1차 견적미팅 &gt; 2차 현장미팅 진행하는데
+                아직 계약전임에도 불구하고 현장할곳을 세세하게 확인해주시며
+                여러번 견적수정요청에도 항상 빠르고 친절하게 답변주시는 모습과
+                원하는 모든걸 진짜 다 실현시켜주시면서 합리적인 가격으로
+                최종견적을 내주시는 쿨하고 멋진 대표님덕분에 예나디자인과 계약을
+                진행하게되었습니다:) 인테리어 기간은 총4주진행되었고
+                현장/살고있는곳/회사 3곳이 근방이라 크게크게 공정이 끝나는
+                3~4일마다 한번씩 퇴근후 방문했던거같은데 그때마다 창문닫기나
+                전기등 다 꼼꼼히 마무리하고 퇴근해주시고 유명한 셀인카페에서
+                글을 보다가 불안한마음이들거나 궁금한점들이 생기면 출근하시는
+                시간에 맞춰서 한번에 정리해서 여쭤보면 빠지는항목없이 다
+                세세하게 답변해주셨습니다. 다른곳은 무언가를 요청하면 안되는거다
+                / 못한다 고도 하시는데,, 예나대표님한테 세세한 손잡이나 제마음이
+                변해서 자재 변경요청등을 말씀드리면 부정은 없이 항상
+                알아보시겠다고 하신후 요청한걸로 싹 진행해주셔서 항상 감사했어요
+                히히 가전가구 설치 기사님들/집들이 온 손님들이 항상 오시면
+                하시는말씀이 모델하우스같다. 너무 깔끔하고 이쁘게 시공되었다.
+                따끈한 후기로는 확장한방1곳에서 1박을 하고간 가족이 단열을
+                얼마나 꼼꼼히 잘했으면 자다가 더워서 창문을 열고 잤다고
+                하실만큼! 입니다. 확장하면 단열이 얼마나 중요한부분인지는
+                아실거에요~! ㅎㅎ 뿐만아니라 인테리어 완성되어 입주한후에도
+                자잘하게 예민한 저에게만 보이는 점들도 봐달라고 말씀드리면 이미
+                잔금까지 다 치룬후임에도 불구하고 항상 빠르게 답변주시면서
+                일정잡고 방문해주셔서 손봐주시고 박과장님이 오셔서 항상 웃으면서
+                재미있게 봐주시고 가시고 덕분에 불편함없이 요청하고 편하고
+                감사했습니다! 저처럼 걱정많고 고민많으신 분들이 리뷰보면서 업체
+                컨택을 하실텐데 제 리뷰를 보게되신다면 믿고 예나디자인에서
+                진행해도 된다고 꼭 말씀드리고싶네요~! 대표님/박과장님/다른
+                직원분들 모두 감사합니다~~!
+              </p>
+            </div>
+          </a>
+
+          <a class="box-interview" href="#">
+            <div class="box-interview_img">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170847788288990712.jpg?w=256&h=256&c=c"
+                alt="홈루덴스"
+              />
+            </div>
+            <div class="box-interview_text">
+              <p class="font-darkgray title-interview">홈루덴스</p>
+              <p class="font-darkgray description-interview">
+                처음 상담부터 꼼꼼하고 친절하셨어요, 제가 2베이 아파트에서
+                냉장고에 김치냉장고까지 있는 상황에서 넓은 주방을 갖고싶어하는
+                제 니즈를 잘 반영해주셨습니다. 제가 원하던 화장실도 레퍼런스
+                가져간대로 구현해주시고 (주변에서 다들 호텔같다고 해요 ㅎㅎ)
+                작은 디테일 하나하나 소통하면서 진행했습니다. 특히 안방 침대
+                헤드 부분은 미대출신!!! 인테리어 팀장님께서 직접 작업해주셨는데
+                제가 원하던대로 나와서 너무 만족스럽습니다. 너무 감사드려요:-)
+              </p>
+            </div>
+          </a>
+
+          <a class="box-interview" href="#">
+            <div class="box-interview_img">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/cards/expert_reviews/170688711793777188.JPG?w=256&h=256&c=c"
+                alt="가우디디자인"
+              />
+            </div>
+            <div class="box-interview_text">
+              <p class="font-darkgray title-interview">가우디 디자인</p>
+              <p class="font-darkgray description-interview">
+                인터넷에서 보고 계약 한 업체가 처음 계약과 다르게 자꾸 이런 저런
+                핑계로 금액을 많이 올려서 계약을 중도 해지하고, 오늘의 집을 통해
+                집에서 가까우면서 평가가 좋은 가우디를 소개 받아서 공사를 의뢰
+                했습니다. 우선 계약 대비 공사비가 거의 비슷하게 나온 부분과
+                일정이 빡빡함에도 불구하고 맘에 들게 인테리어가 완료된 부분이
+                가장 큰 장점이라고 할 수 있겠네요. 15년 정도 된 집이 정말
+                신축처럼 너무 깔끔 하게 바뀌었습니다. 아이가 좀 더 커서 평수
+                넓혀 이사 갈 때도 또 의뢰하고 싶네요.
+              </p>
+            </div>
+          </a>
+        </div>
+        <!-- 더보기 버튼 -->
+        <button class="no_tablet font-lightgray" type="button">
+          인테리어 시공업체 찾기
+        </button>
+      </section>
+      <hr />
+
+      <!-- 오늘의 기획전
+       -->
+      <section class="inner padding section--special">
+        <div class="title-group">
+          <a class="title">오늘의 기획전</a>
+          <a class="arrow-right">
+            <svg
+              class="no_tablet"
+              height="20px"
+              width="20px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 26.231 26.231"
+              xml:space="preserve"
+            >
+              <g>
+                <g id="c108_arrow">
+                  <path
+                    style="fill: #030104"
+                    d="M4.669,0.382v5.879l8.312,6.555c0.183,0.146,0.183,0.453,0,0.6l-8.312,6.556v5.879
+      c0,0.145,0.08,0.278,0.212,0.344c0.132,0.062,0.29,0.044,0.403-0.046l16.141-12.733c0.183-0.146,0.183-0.453,0-0.6L5.284,0.082
+      C5.171-0.007,5.013-0.026,4.881,0.039C4.749,0.101,4.669,0.235,4.669,0.382z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a class="lookmore no_mobile">더보기</a>
+        </div>
+        <div class="container--special">
+          <a class="box-special" href="#">
+            <div class="box-special_img">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/exhibitions/cover_image/170887306998560835.png?w=256&h=171&c=c"
+                alt="오픈런딜"
+              />
+            </div>
+            <div class="font-darkgray box-special_text">
+              <p class="description-special">
+                전상품 무료배송, 요일마다 바뀌는 파격특가 장보기!
+              </p>
+              <p class="title-special">오픈런 딜!</p>
+            </div>
+          </a>
+
+          <a class="box-special" href="#">
+            <div class="box-special_img">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/exhibitions/cover_image/168388854027804620.jpg?w=144&h=430&c=c"
+                alt="오굿즈"
+              />
+            </div>
+            <div class="font-darkgray box-special_text">
+              <p class="description-special">
+                오늘의집 큐레이션 편집샵 오!굿즈
+              </p>
+              <p class="title-special">오직 여기서만, O!Goods</p>
+            </div>
+          </a>
+
+          <a class="box-special" href="#">
+            <div class="box-special_img">
+              <img
+                src="https://image.ohou.se/i/bucketplace-v2-development/uploads/exhibitions/cover_image/169416553917270384.png?w=144&h=459&c=c"
+                alt="오늘의집배송"
+              />
+            </div>
+            <div class="font-darkgray box-special_text">
+              <p class="description-special">최대 25만원 SAVE</p>
+              <p class="title-special">0원한 특급패스, 오늘의집 배송!</p>
+            </div>
+          </a>
+          <div class="card">
+            <a href="#" class="box-special">
+              <span class="arrow font-lightgray"> → </span>
+              <p class="font-lightgray">더보기</p>
+            </a>
+          </div>
+        </div>
+        <!-- 더보기 버튼 -->
+        <button class="no_tablet font-lightgray" type="button">
+          기획전 버튼
+        </button>
+      </section>
+      <hr />
+      <!-- 베스트 -->
+      <section class="inner padding section--best">
+        <div class="title-group">
+          <a class="title">베스트</a>
+          <a class="arrow-right">
+            <svg
+              class="no_tablet"
+              height="20px"
+              width="20px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 26.231 26.231"
+              xml:space="preserve"
+            >
+              <g>
+                <g id="c108_arrow">
+                  <path
+                    style="fill: #030104"
+                    d="M4.669,0.382v5.879l8.312,6.555c0.183,0.146,0.183,0.453,0,0.6l-8.312,6.556v5.879c0,0.145,0.08,0.278,0.212,0.344c0.132,0.062,0.29,0.044,0.403-0.046l16.141-12.733c0.183-0.146,0.183-0.453,0-0.6L5.284,0.082C5.171-0.007,5.013-0.026,4.881,0.039C4.749,0.101,4.669,0.235,4.669,0.382z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a class="lookmore no_mobile">더보기</a>
+        </div>
+        <div class="container--best_category">
+          <ul class="box-best_category">
+            <li>
+              <a class="icon-best_category first-icon-best_category" href="#"
+                >전체</a
+              >
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">선물추천</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">가구</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">패브릭</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">주방용품</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">가전/디지털</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">식품</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">데코/식물</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">조명</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">수납/정리</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">생활용품</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">생필품</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">유아/아동</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">반려용품</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">캠핑/레저</a>
+            </li>
+            <li>
+              <a class="icon-best_category" href="#">공구</a>
+            </li>
+          </ul>
+        </div>
+        <!-- 베스트 상품 -->
+        <div class="container-best_item">
+          <article class="best_item">
+            <a href="#" class="overlay overlay-best_item">
+              <div class="image">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/162303132447303472.jpeg?gif=1&w=480&h=480&c=c&q=0.8&webp=1"
+                  alt="아엠홈"
+                />
+                <div class="bookmark">
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgb(111, 225, 245); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                </div>
+                <div class="ranking">
+                  <div class="box-ranking">
+                    <svg
+                      fill="#000000"
+                      width="50px"
+                      viewBox="0 0 24 24"
+                      id="bookmark"
+                      data-name="Flat Line"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon flat-line"
+                    >
+                      <path
+                        id="secondary"
+                        d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                        style="fill: rgb(111, 225, 245); stroke-width: 2"
+                      ></path>
+                      <path
+                        id="primary"
+                        d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                        style="
+                          fill: none;
+                          stroke: rgba(111, 225, 245, 0);
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 2;
+                        "
+                      ></path>
+                    </svg>
+                    <p>1</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <p class="font-lightgray today-dealitem_brand">아엠홈</p>
+                <span class="font-gray today-dealitem_name">
+                  [7일간,최대10%쿠폰+사은품][맞춤]비침없는 도톰
+                  레이스/쉬폰커튼(나비주름/핀형/봉집)
+                </span>
+                <span class="today-dealitem_rate">
+                  <span class="rate">48%</span>
+                  <span>22,500</span>
+                </span>
+                <p class="font-lightgray today-dealitem_star">
+                  <svg
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24 24"
+                    fill="rgb(53, 197, 240)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="rgb(53, 197, 240)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <strong class="avg">4.8</strong>
+                  리뷰 758
+                </p>
+                <div class="today-dealitem_badge">
+                  <div class="delivery">무료배송</div>
+                  <div class="special-price">특가</div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="best_item">
+            <a href="#" class="overlay overlay-best_item">
+              <div class="image">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/169821856938204382.jpg?gif=1&w=480&h=480&c=c&q=0.8&webp=1"
+                  alt="헬로우 슬립"
+                />
+                <div class="bookmark">
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgb(111, 225, 245); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                </div>
+                <div class="ranking">
+                  <div class="box-ranking">
+                    <svg
+                      fill="#000000"
+                      width="50px"
+                      viewBox="0 0 24 24"
+                      id="bookmark"
+                      data-name="Flat Line"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon flat-line"
+                    >
+                      <path
+                        id="secondary"
+                        d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                        style="fill: rgb(111, 225, 245); stroke-width: 2"
+                      ></path>
+                      <path
+                        id="primary"
+                        d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                        style="
+                          fill: none;
+                          stroke: rgba(111, 225, 245, 0);
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 2;
+                        "
+                      ></path>
+                    </svg>
+                    <p>2</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <p class="font-lightgray today-dealitem_brand">헬로우슬립</p>
+                <span class="font-gray today-dealitem_name">
+                  [10%쿠폰] 부드러운 카스테라 워싱 항균 옥수수솜 간절기/사계절
+                  차렵이불세트
+                </span>
+                <span class="today-dealitem_rate">
+                  <span class="rate">48%</span>
+                  <span>22,500</span>
+                </span>
+                <p class="font-lightgray today-dealitem_star">
+                  <svg
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24 24"
+                    fill="rgb(53, 197, 240)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="rgb(53, 197, 240)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <strong class="avg">4.5</strong>
+                  리뷰 1,532
+                </p>
+                <div class="today-dealitem_badge">
+                  <div class="special-price">특가</div>
+                </div>
+              </div>
+            </a>
+          </article>
+          <article class="best_item">
+            <a href="#" class="overlay overlay-best_item">
+              <div class="image">
+                <img
+                  src="https://image.ohou.se/i/bucketplace-v2-development/uploads/productions/1554432441250_K6wX5dopzz.jpg?gif=1&w=480&h=480&c=c&q=0.8&webp=1"
+                  alt="퀵슬립"
+                />
+                <div class="bookmark">
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgba(255, 255, 255, 0.3); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                  <svg
+                    fill="#000000"
+                    width="25px"
+                    height="25px"
+                    viewBox="0 0 24 24"
+                    id="bookmark"
+                    data-name="Flat Line"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon flat-line"
+                  >
+                    <path
+                      id="secondary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="fill: rgb(111, 225, 245); stroke-width: 2"
+                    ></path>
+                    <path
+                      id="primary"
+                      d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                      style="
+                        fill: none;
+                        stroke: rgb(255, 255, 255);
+                        stroke-linecap: round;
+                        stroke-linejoin: round;
+                        stroke-width: 2;
+                      "
+                    ></path>
+                  </svg>
+                </div>
+                <div class="ranking">
+                  <div class="box-ranking">
+                    <svg
+                      fill="#000000"
+                      width="50px"
+                      viewBox="0 0 24 24"
+                      id="bookmark"
+                      data-name="Flat Line"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon flat-line"
+                    >
+                      <path
+                        id="secondary"
+                        d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                        style="fill: rgb(111, 225, 245); stroke-width: 2"
+                      ></path>
+                      <path
+                        id="primary"
+                        d="M12,17,5,21V4A1,1,0,0,1,6,3H18a1,1,0,0,1,1,1V21Z"
+                        style="
+                          fill: none;
+                          stroke: rgba(111, 225, 245, 0);
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-width: 2;
+                        "
+                      ></path>
+                    </svg>
+                    <p>3</p>
+                  </div>
+                </div>
+              </div>
+              <div class="content">
+                <p class="font-lightgray today-dealitem_brand">퀵슬립</p>
+                <span class="font-gray today-dealitem_name">
+                  Q4 유로탑 롤팩 매트리스 2size
+                </span>
+                <span class="today-dealitem_rate">
+                  <span class="rate">57%</span>
+                  <span>155,500</span>
+                </span>
+                <p class="font-lightgray today-dealitem_star">
+                  <svg
+                    width="18px"
+                    height="18px"
+                    viewBox="0 0 24 24"
+                    fill="rgb(53, 197, 240)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.245 4.174C11.4765 3.50808 11.5922 3.17513 11.7634 3.08285C11.9115 3.00298 12.0898 3.00298 12.238 3.08285C12.4091 3.17513 12.5248 3.50808 12.7563 4.174L14.2866 8.57639C14.3525 8.76592 14.3854 8.86068 14.4448 8.93125C14.4972 8.99359 14.5641 9.04218 14.6396 9.07278C14.725 9.10743 14.8253 9.10947 15.0259 9.11356L19.6857 9.20852C20.3906 9.22288 20.743 9.23007 20.8837 9.36432C21.0054 9.48051 21.0605 9.65014 21.0303 9.81569C20.9955 10.007 20.7146 10.2199 20.1528 10.6459L16.4387 13.4616C16.2788 13.5829 16.1989 13.6435 16.1501 13.7217C16.107 13.7909 16.0815 13.8695 16.0757 13.9507C16.0692 14.0427 16.0982 14.1387 16.1563 14.3308L17.506 18.7919C17.7101 19.4667 17.8122 19.8041 17.728 19.9793C17.6551 20.131 17.5108 20.2358 17.344 20.2583C17.1513 20.2842 16.862 20.0829 16.2833 19.6802L12.4576 17.0181C12.2929 16.9035 12.2106 16.8462 12.1211 16.8239C12.042 16.8043 11.9593 16.8043 11.8803 16.8239C11.7908 16.8462 11.7084 16.9035 11.5437 17.0181L7.71805 19.6802C7.13937 20.0829 6.85003 20.2842 6.65733 20.2583C6.49056 20.2358 6.34626 20.131 6.27337 19.9793C6.18915 19.8041 6.29123 19.4667 6.49538 18.7919L7.84503 14.3308C7.90313 14.1387 7.93218 14.0427 7.92564 13.9507C7.91986 13.8695 7.89432 13.7909 7.85123 13.7217C7.80246 13.6435 7.72251 13.5829 7.56262 13.4616L3.84858 10.6459C3.28678 10.2199 3.00588 10.007 2.97101 9.81569C2.94082 9.65014 2.99594 9.48051 3.11767 9.36432C3.25831 9.23007 3.61074 9.22289 4.31559 9.20852L8.9754 9.11356C9.176 9.10947 9.27631 9.10743 9.36177 9.07278C9.43726 9.04218 9.50414 8.99359 9.55657 8.93125C9.61593 8.86068 9.64887 8.76592 9.71475 8.57639L11.245 4.174Z"
+                      stroke="rgb(53, 197, 240)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></path>
+                  </svg>
+                  <strong class="avg">4.8</strong>
+                  리뷰 15,969
+                </p>
+                <div class="today-dealitem_badge">
+                  <div class="delivery">무료배송</div>
+                  <div class="special-price">특가</div>
+                </div>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+      <hr class="no_mobile" />
+      <!-- 인기검색어 -->
+      <section class="inner no_tablet section--ranking">
+        <div class="title-group">
+          <h1 class="title">인기 검색어</h1>
+        </div>
+        <div class="container--ranking">
+          <a class="box--ranking" href="#">
+            <p>1</p>
+            <svg
+              fill="#f77"
+              width="14px"
+              height="14px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M21,21H3L12,3Z" />
+            </svg>
+            <p>스너글섬유유연제</p>
+          </a>
+          <a class="box--ranking" href="#">
+            <p>2</p>
+            <p class="pink">NEW</p>
+            <p>에싸</p>
+          </a>
+          <a class="box--ranking" href="#">
+            <p>3</p>
+            <svg
+              fill="#f77"
+              width="14px"
+              height="14px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M21,21H3L12,3Z" />
+            </svg>
+            <p>리퍼상품</p>
+          </a>
+          <a class="box--ranking" href="#">
+            <p>4</p>
+            <svg
+              fill="#f77"
+              width="14px"
+              height="14px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M21,21H3L12,3Z" />
+            </svg>
+            <p>스너글</p>
+          </a>
+          <a class="box--ranking" href="#">
+            <p>5</p>
+            <svg
+              fill="#f77"
+              width="14px"
+              height="14px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M21,21H3L12,3Z" />
+            </svg>
+            <p>벽꾸미기</p>
+          </a>
+          <a class="box--ranking" href="#">
+            <p>6</p>
+            <svg
+              fill="#f77"
+              width="14px"
+              height="14px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M21,21H3L12,3Z" />
+            </svg>
+            <p>캔버스 의자</p>
+          </a>
+          <a class="box--ranking" href="#">
+            <p>7</p>
+
+            <p class="pink">NEW</p>
+            <p>베란다 선반</p>
+          </a>
+          <a class="box--ranking" href="#">
+            <p>8</p>
+            <p class="pink">NEW</p>
+            <p>정리</p>
+          </a>
+        </div>
+      </section>
+      <hr />
+      <footer></footer>
+    </div>
+  </body>
+</html>

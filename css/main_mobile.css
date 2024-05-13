@@ -1,0 +1,558 @@
+/* common */
+.no_mobile {
+  display: none;
+}
+.inner {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+/* header */
+header {
+  padding: 10px 0;
+  box-shadow: 0 0 3px #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: inherit;
+}
+.logo img {
+  height: inherit;
+  cursor: pointer;
+}
+header .icon {
+  width: 30px;
+  height: 30px;
+}
+header nav .icon:hover path {
+  stroke: rgb(111, 225, 245);
+}
+
+/* 가로 스크롤 메뉴 바 */
+.section--scrollmenu .container {
+  width: 100%;
+  overflow: hidden;
+}
+.section--scrollmenu .box {
+  overflow-x: auto;
+  display: flex;
+  padding: 0 20px;
+}
+.scrollmenu {
+  display: flex;
+  white-space: nowrap;
+  font-weight: 900;
+}
+.scrollmenu a {
+  display: block;
+  padding: 10px;
+}
+.section--scrollmenu .box--ranking {
+  gap: 4px;
+}
+.section--scrollmenu .box--ranking p {
+  font-size: 12px;
+}
+/* 직장인이라면 주목할만한 이벤트*/
+.event {
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: block;
+}
+.event img {
+  height: 100%;
+  width: 100%;
+  transition: 0.2s;
+}
+.event img:hover {
+  transform: scale(1.05);
+}
+
+.imgmenu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 10px;
+}
+.iconmenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.iconmenu img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+/* 이미지 겹치게되면 50*50이하로 작아지게 하는법!!! */
+.imgmenu p {
+  padding: 10px 0 0 0;
+  font-size: 12px;
+}
+/* 이런 사진 찾고 있나요? */
+.title-group {
+  display: flex;
+  justify-content: space-between;
+}
+/* !질문 이거 왜 안돼? */
+.title {
+  -webkit-tap-highlight-color: rgba(253, 4, 4, 0.695);
+}
+.title-group .arrow-right {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.scroll-cards {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.cards {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+/* 236px */
+.card {
+  position: relative;
+  aspect-ratio: 128 / 171;
+  width: 35%;
+  flex-shrink: 0;
+}
+.card a {
+  border-radius: 4px;
+}
+.card .product {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: 0.2s;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+.profile {
+  position: absolute;
+  bottom: 4%;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+.profile .profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.profile .profile-img img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+.profile p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+}
+.bookmark {
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+}
+.bookmark svg:nth-child(2) {
+  display: none;
+}
+.card:last-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card:last-child > a {
+  display: block;
+}
+/* !질문 여기도 커서거시기하면 색 덮이는거 하고싶음 -호버임*/
+.arrow {
+  display: block;
+  background-color: rgb(234, 237, 239);
+  padding: 10px;
+  border-radius: 50%;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.card:last-child > a > p {
+  font-size: 12px;
+  font-weight: 800;
+}
+/* 색 어케 변해?!유후 
+svg에 색 넣는법 몰겟네~*/
+.bookmark:hover svg:nth-child(2) {
+  display: block;
+}
+.bookmark:hover svg:nth-child(1) {
+  display: none;
+}
+
+/* 40평이상! */
+.board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 20px 0 0 0;
+}
+.picture-box {
+  display: block;
+}
+.picture-box .picture img {
+  transition: 0.2s;
+}
+.picture-box:hover .picture img {
+  transform: scale(1.1);
+}
+.picture {
+  position: relative;
+  border-radius: 4px;
+  max-width: 500px;
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.picture img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 카테고리별 상품 찾기 */
+.categories {
+  display: flex;
+  gap: 10px;
+  overflow-y: hidden;
+  padding: 10px 0;
+}
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+}
+.category img {
+  height: 72px;
+}
+.category p {
+  font-size: 14px;
+  letter-spacing: -2px;
+}
+
+/* 오늘의 딜*/
+.today_dealitem,
+.best_item {
+  margin-top: 20px;
+}
+.overlay {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.overlay .image {
+  position: relative;
+  width: 100%;
+}
+.overlay img {
+  width: 100%;
+}
+.overlay .content {
+  margin-left: 10px;
+}
+.timer {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  background-color: #f77;
+  border-radius: 4px;
+  padding: 3px;
+  color: #fff;
+}
+.today-dealitem_brand {
+  font-size: 11px;
+  font-weight: 900;
+}
+.today-dealitem_name,
+.today-dealitem_star,
+.today-dealitem_rate,
+.today-dealitem_badge,
+.today-dealitem_card {
+  margin-top: 8px;
+}
+.today-dealitem_name {
+  font-size: 14px;
+  line-height: 1.3;
+  letter-spacing: -1px;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.today-dealitem_rate {
+  display: inline-block;
+}
+.today-dealitem_star {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-weight: 900;
+}
+.today-dealitem_star .avg {
+  margin-right: 5px;
+}
+.today-dealitem_rate {
+  font-size: 24px;
+  font-weight: 700;
+}
+.today-dealitem_rate .rate {
+  margin-right: 5px;
+  color: rgb(53, 197, 240);
+}
+.today-dealitem_badge {
+  display: flex;
+  grid-gap: 5px;
+}
+.delivery {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  padding: 5px;
+  color: #424242;
+  font-size: 12px;
+  font-weight: 900;
+}
+.special-price {
+  background-color: #f77;
+  border-radius: 4px;
+  padding: 5px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+}
+.today-dealitem_card .button {
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  padding: 4px;
+  margin-top: 0;
+}
+.today-dealitem_card img {
+  width: 11px;
+  margin-right: 5px;
+}
+.today-dealitem_card span {
+  font-size: 10px;
+  font-weight: 900;
+}
+
+/* 버튼 */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  border: 1px solid rgb(234, 237, 239);
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 16px;
+  margin-top: 20px;
+}
+/* 이미지 옆에 글 공통 */
+.box-interview,
+.box-special {
+  display: flex;
+  margin-top: 20px;
+}
+.box-interview_img,
+.box-special_img {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.box-interview_img img,
+.box-special_img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.2s;
+}
+.box-interview:hover img,
+.box-special:hover img {
+  transform: scale(1.2);
+}
+.box-interview_text,
+.box-special_text {
+  flex: 1 1 100%;
+  margin: 5px 0 0 10px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.title-interview,
+.title-special {
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+/*유저들의 인테리어 시공 인터뷰  */
+.box-interview_img {
+  flex: 0 0 120px;
+  height: 120px;
+}
+
+.description-interview {
+  line-height: 1.4;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  word-break: keep-all;
+}
+
+/* 오늘의 기획전 */
+.box-special_img {
+  flex: 0 0 120px;
+  height: 80px;
+}
+.box-special_img img {
+  object-fit: cover;
+}
+.box-special_text {
+  overflow: hidden;
+}
+.title-special {
+  font-size: 18px;
+  word-break: keep-all;
+}
+.description-special {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+/* 베스트
+16개 중 11개만 보임 */
+.container--best_category {
+  margin-top: 20px;
+  overflow: hidden;
+}
+.box-best_category {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+  flex-shrink: 0;
+  width: 100%;
+}
+.icon-best_category {
+  display: block;
+  padding: 8px;
+  border-radius: 16px;
+  background-color: rgb(247, 249, 250);
+  font-size: 14px;
+  color: rgb(47, 52, 56);
+  white-space: nowrap;
+}
+.first-icon-best_category {
+  background-color: rgb(53, 197, 240);
+  color: #fff;
+}
+
+/* 베스트 상품 */
+.container-best_item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.overlay-best_item {
+  display: block;
+}
+.overlay-best_item .content {
+  margin: 10px 0 0 0;
+}
+.ranking {
+  position: absolute;
+  top: 0;
+  left: 4%;
+}
+.box-ranking {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.box-ranking p {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  z-index: 2;
+  color: #fff;
+  font-weight: 900;
+}
+.container-best_item .today-dealitem_rate {
+  font-size: 20px;
+}
+.container--ranking {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 20px;
+}
+.box--ranking {
+  display: grid;
+  grid-template-columns: 10px 15px auto;
+  align-items: center;
+  gap: 15px;
+  margin: 10px;
+  white-space: nowrap;
+}
+.box--ranking p:nth-child(1) {
+  font-weight: 900;
+}
+.box--ranking *:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.container--ranking .box--ranking p:nth-child(3) {
+  font-size: 14px;
+  font-weight: 500;
+}
+.pink {
+  color: #f77;
+  font-weight: 900;
+  font-size: 10px;
+}
+
+/* 아래 */
+footer {
+  height: 400px;
+  background-color: rgb(247, 249, 250);
+}

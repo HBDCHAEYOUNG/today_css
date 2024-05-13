@@ -1,0 +1,32 @@
+/* common */
+.no_desktop {
+  display: none;
+}
+
+/* 헤더 검색창 */
+.right {
+  display: flex;
+  align-items: center;
+}
+.search {
+  display: flex;
+  margin-right: 10px;
+  border: 1px solid #dadde0;
+  border-radius: 4px;
+}
+
+.search button {
+  background-color: #fff;
+  padding: 5px 0 5px 10px;
+}
+.search input {
+  border: none;
+  outline: none;
+}
+
+.card {
+  width: 16%;
+}
+.picture {
+  aspect-ratio: 3/2;
+}
